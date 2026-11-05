@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Masuk atau buat akun Sayfiddinovna Sport.">
+  <title>Masuk — Sayfiddinovna Sport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="account-page">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="account-header">
+    <a class="brand" href="index.html" aria-label="Sayfiddinovna Sport, beranda"><span class="brand-mark">S<span>.</span></span><span class="brand-name">SAYFIDDINOVNA<br><b>SPORT</b></span></a>
+    <div class="header-actions"><a class="text-link" href="index.html">← Belanja</a></div>
+  </header>
+  <main id="main" class="auth-page-main">
+    <section class="auth-page-card" aria-labelledby="auth-page-title">
+      <span class="eyebrow">SAYFIDDINOVNA SPORT CLUB</span>
+      <h1 id="auth-page-title">Selamat datang kembali</h1>
+      <p class="auth-intro">Masuk untuk melihat profil, mengumpulkan poin, dan melanjutkan checkout.</p>
+      <form id="login-page-form" class="form-grid">
+        <label id="login-name-wrap" class="full-field" hidden><span id="login-name-label">Nama lengkap</span><input name="name" autocomplete="name"></label>
+        <label class="full-field"><span id="login-email-label">Email</span><input required type="email" name="email" autocomplete="email" placeholder="nama@email.com"></label>
+        <label class="full-field"><span id="login-password-label">Kata sandi</span><input required type="password" name="password" minlength="8" autocomplete="current-password" placeholder="Minimal 8 karakter"></label>
+        <label class="auth-consent full-field"><input type="checkbox" name="marketing"><span id="marketing-copy">Saya ingin menerima kabar promo dan produk baru melalui email. Persetujuan ini opsional.</span></label>
+        <label class="auth-consent full-field"><input required type="checkbox" name="terms"><span id="terms-copy">Saya menyetujui Syarat &amp; Ketentuan dan Pemberitahuan Privasi Sayfiddinovna Sport.</span></label>
+        <p class="auth-message full-field" id="login-page-message" role="status" aria-live="polite"></p>
+        <button class="button button-dark full-field" id="login-page-submit">Masuk <span>↗</span></button>
+        <button class="text-link full-field auth-toggle" id="login-page-toggle" type="button">Belum punya akun? Buat akun</button>
+      </form>
+      <small class="demo-note">Akun disimpan hanya di browser ini. Gunakan perangkat dan browser yang sama untuk masuk.</small>
+    </section>
+  </main>
+  <footer class="site-footer"><address><strong>Alamat toko</strong><br>Informasi alamat belum tersedia</address><div class="footer-contact"><strong>Hubungi kami</strong><a class="footer-contact-wa" href="https://wa.me/6281319831225?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20perlengkapan%20hoki." target="_blank" rel="noopener noreferrer">WhatsApp · 081319831225 ↗</a><a class="footer-instagram" href="https://www.instagram.com/Sayfiddinovna.sport/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Sayfiddinovna Sport">Instagram <span>@Sayfiddinovna.sport</span> ↗</a></div></footer>
+  <script src="account-page.js?v=20261020-6"></script>
+  <script src="language.js?v=20261101-5"></script>
+<script src="header-controls.js?v=20261101-5"></script></body>
+</html>
+

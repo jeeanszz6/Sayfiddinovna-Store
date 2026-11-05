@@ -1,0 +1,7 @@
+.env
+.private/
+node_modules/
+npm-debug.log*
+
+# Private Midtrans/database credentials
+api/config.local.php

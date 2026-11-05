@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kelola informasi akun Sayfiddinovna Sport.">
+  <title>Akun saya — Sayfiddinovna Sport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261020-5">
+</head>
+<body class="account-page">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="account-header">
+    <a class="brand" href="index.html" aria-label="Sayfiddinovna Sport, beranda"><span class="brand-mark">S<span>.</span></span><span class="brand-name">SAYFIDDINOVNA<br><b>SPORT</b></span></a>
+    <div class="header-actions"><a class="text-link" href="katalog.html">Belanja</a></div>
+  </header>
+  <main id="main" class="account-dashboard">
+    <aside class="account-sidebar" aria-label="Navigasi akun">
+      <h1>Ringkasan akun</h1>
+      <nav>
+        <a class="active" href="#personal">Informasi pribadi <span>›</span></a>
+        <a href="#address">Buku alamat <span>›</span></a>
+        <a href="#preferences">Preferensi <span>›</span></a>
+        <a href="#connected">Akun terhubung <span>›</span></a>
+        <button id="account-logout" type="button">Keluar</button>
+      </nav>
+    </aside>
+    <section class="account-content" aria-labelledby="profile-title">
+      <div class="account-greeting"><span class="eyebrow">SAYFIDDINOVNA SPORT CLUB</span><p>Profil akun</p></div>
+      <h2 id="profile-title">Detail saya</h2>
+      <p class="account-lead">Perbarui informasi akun agar pesanan dan pengiriman berjalan lancar.</p>
+      <section class="account-detail" id="personal">
+        <div class="account-section-heading"><h3>Detail pribadi</h3><button class="text-link" id="profile-edit-toggle" type="button">Edit</button></div>
+        <dl class="profile-details"><div><dt>Nama</dt><dd id="profile-name">—</dd></div><div><dt>Tanggal lahir</dt><dd>Belum ditambahkan</dd></div><div><dt>Jenis kelamin</dt><dd>Belum ditambahkan</dd></div></dl>
+        <form id="profile-edit-form" class="form-grid profile-edit-form" hidden><label class="full-field">Nama lengkap<input name="name" autocomplete="name" required></label><button class="button button-dark" type="submit">Simpan perubahan</button><button class="button button-outline" id="profile-edit-cancel" type="button">Batal</button></form><p id="profile-message" role="status" aria-live="polite"></p>
+      </section>
+      <section class="account-detail" id="login-details">
+        <h3>Detail login</h3><dl class="profile-details"><div><dt>Email</dt><dd id="profile-email">—</dd></div><div><dt>Kata sandi</dt><dd>••••••••</dd></div></dl>
+        <a class="text-link" href="masuk.html">Kelola kata sandi</a>
+      </section>
+      <section class="account-detail" id="address"><h3>Buku alamat</h3><p id="saved-address">Belum ada alamat tersimpan. Alamat akan tersimpan setelah checkout.</p><a class="text-link" href="index.html?checkout=1#unggulan">Lanjutkan belanja</a></section>
+      <section class="account-detail" id="preferences"><h3>Membership &amp; preferensi</h3><p id="member-summary">Kamu belum bergabung dengan program membership.</p><a class="text-link" href="membership.html">Lihat program membership</a></section>
+      <section class="account-detail" id="connected"><h3>Akun terhubung</h3><p>Belum ada akun pihak ketiga yang terhubung.</p></section>
+    </section>
+  </main>
+  <footer class="site-footer"><address><strong>Alamat toko</strong><br>Informasi alamat belum tersedia</address><div class="footer-contact"><strong>Hubungi kami</strong><a class="footer-contact-wa" href="https://wa.me/6281319831225?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20perlengkapan%20hoki." target="_blank" rel="noopener noreferrer">WhatsApp · 081319831225 ↗</a><a class="footer-instagram" href="https://www.instagram.com/Sayfiddinovna.sport/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Sayfiddinovna Sport">Instagram <span>@Sayfiddinovna.sport</span> ↗</a></div></footer>
+  <script src="account-dashboard.js?v=20261020-5"></script>
+  <script src="language.js?v=20261101-5"></script>
+<script src="header-controls.js?v=20261101-5"></script></body>
+</html>
+
